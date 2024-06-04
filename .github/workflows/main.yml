@@ -24,4 +24,4 @@ jobs:
         java-version: ${{ matrix.java }}
     - name: Compile Java sources
       run: |
-        ./gradlew clean build -x test
+        mvn clean install -DskipTests
